@@ -1,0 +1,12 @@
+// Footer
+.main-footer {
+    padding: 50px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    // Max Width 767
+    @media (max-width: $break-767) {
+        padding: 20px 0;
+    }
+}

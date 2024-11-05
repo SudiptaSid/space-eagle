@@ -1,0 +1,384 @@
+// Hero Banner
+.hero-banner {
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .content {
+        .logo {
+            a {
+                display: inline-block;
+                max-width: 880px;
+
+                /* Max Width 991px */
+                @media (max-width: $break_991) {
+                    max-width: 500px;
+                }
+            }
+        }
+        p {
+            color: $black-clr;
+            margin-bottom: 30px;
+
+            // Max Width 767
+            @media (max-width: $break-767) {
+                color: $white-clr;
+            }
+        }
+    }
+}
+
+// About Us
+.about-us {
+    padding-top: 250px;
+    padding-bottom: 400px;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding-top: 100px;
+        padding-bottom: 150px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-bottom: 100px;
+    }
+    // Max Width 767
+    @media (max-width: $break-767) {
+        padding-top: 0;
+    }
+    .pattern {
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-width: 50%;
+
+        // Max Width 767
+        @media (max-width: $break-767) {
+            max-width: 100%;
+        }
+    }
+    .section-heading {
+        + .section-heading {
+            margin-top: 140px;
+
+            /* Max Width 1024px */
+            @media (max-width: $break_1024) {
+                margin-top: 100px;
+            }
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                margin-top: 80px;
+            }
+            // Max Width 767
+            @media (max-width: $break-767) {
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+// MVA + Service
+.merge-one {
+    background-size: 70%;
+    background-position: top left;
+    background-repeat: no-repeat;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        background-size: 100%;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        background-position: center left;
+    }
+    // Max Width 767
+    @media (max-width: $break-767) {
+        background-size: cover;
+    }
+}
+
+// Service
+.service {
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .main-heading {
+        &.section-heading {
+            color: $black-clr;
+            padding-top: 100px;
+
+            // Max Width 767
+            @media (max-width: $break-767) {
+                color: $white-clr;
+                padding-top: 0;
+            }
+        }
+    }
+}
+
+// Radiant + Clubhouse
+.merge-two {
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    // Max Width 767
+    @media (max-width: $break-767) {
+        background-size: cover;
+    }
+}
+
+// Radiant
+.radiant {
+    padding-top: 200px;
+    padding-bottom: 400px;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding-top: 100px;
+        padding-bottom: 200px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-bottom: 100px;
+    }
+    // Max Width 767
+    @media (max-width: $break-767) {
+        padding-top: 0;
+    }
+    .clipart1 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        max-width: 350px;
+        opacity: 0.4;
+        z-index: -1;
+
+        /* Max Width 1024px */
+        @media (max-width: $break_1024) {
+            max-width: 150px;
+        }
+    }
+    .content {
+        max-width: 1300px;
+        margin: auto;
+        .left-sec {
+            background-image: url(../images/radiant-box.png);
+            padding: 40px 30px;
+            border-radius: 15px;
+            height: 100%;
+
+            // Max Width 767
+            @media (max-width: $break-767) {
+                border-radius: 10px;
+                margin-bottom: 30px;
+                height: auto;
+            }
+        }
+        .right-sec {
+            img {
+                width: 100%;
+                border-radius: 15px;
+
+                // Max Width 767
+                @media (max-width: $break-767) {
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+    .clipart2 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 500px;
+        opacity: 0.4;
+        z-index: -1;
+
+        /* Max Width 1024px */
+        @media (max-width: $break_1024) {
+            max-width: 300px;
+        }
+        // Max Width 767
+        @media (max-width: $break-767) {
+            top: auto;
+            bottom: 0;
+        }
+    }
+}
+
+// Clubhouse
+.clubhouse {
+    padding-top: 300px;
+    padding-bottom: 300px;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .main-heading {
+        max-width: 900px;
+        display: inline-block;
+    }
+    img {
+        width: 100%;
+        border-radius: 15px;
+        margin-top: 30px;
+    }
+    .secondary-heading {
+        margin-top: 50px;
+
+        // Max Width 767
+        @media (max-width: $break-767) {
+            margin-top: 30px;
+        }
+    }
+}
+
+// Team
+.team {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    // Max Width 767
+    @media (max-width: $break-767) {
+        background-size: cover;
+    }
+    .main-heading {
+        margin-bottom: 200px;
+
+        /* Max Width 1024px */
+        @media (max-width: $break_1024) {
+            margin-bottom: 150px;
+        }
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-bottom: 100px;
+        }
+        // Max Width 767
+        @media (max-width: $break-767) {
+            margin-bottom: 80px;
+        }
+    }
+}
+
+// Partners
+.partners {
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 400px;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding-top: 150px;
+        padding-bottom: 200px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    // Max Width 767
+    @media (max-width: $break-767) {
+        background-position: right center;
+        background-size: cover;
+        padding-top: 0;
+    }
+    .main-heading {
+        margin-bottom: 150px;
+
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-bottom: 100px;
+        }
+        // Max Width 767
+        @media (max-width: $break-767) {
+            margin-bottom: 50px;
+        }
+    }
+    ul {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
+// Contact
+.contact {
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding-top: 400px;
+    padding-bottom: 400px;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-size: cover;
+    }
+    // Max Width 767
+    @media (max-width: $break-767) {
+        padding-top: 0;
+    }
+    .main-heading {
+        margin-bottom: 150px;
+
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            margin-bottom: 100px;
+        }
+        // Max Width 767
+        @media (max-width: $break-767) {
+            margin-bottom: 50px;
+        }
+    }
+    form {
+        max-width: 800px;
+        margin: auto;
+    }
+}

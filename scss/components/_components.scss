@@ -1,0 +1,216 @@
+// Heading
+.section-heading {
+    h2 {
+        color: inherit;
+        font-size: 2.8em;
+        margin-bottom: 0;
+
+        /* Max Width 1024px */
+        @media (max-width: $break_1024) {
+            font-size: 2.2em;
+        }
+        /* Max Width 991px */
+        @media (max-width: $break_991) {
+            font-size: 2em;
+        }
+
+        &.h2-40 {
+            font-size: 1.8em;
+
+            /* Max Width 1024px */
+            @media (max-width: $break_1024) {
+                font-size: 1.6em;
+            }
+            /* Max Width 991px */
+            @media (max-width: $break_991) {
+                font-size: 1.4em;
+            }
+        }
+        + p {
+            margin-top: 24px;
+        }
+    }
+
+    p {
+        color: inherit;
+        margin-bottom: 0;
+        + p {
+            margin-top: 24px;
+        }
+        + .btn-sec {
+            margin-top: 24px;
+        }
+    }
+}
+
+// Mission Box
+.mva-box {
+    background-image: url(../images/mission-box.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 40px 30px;
+    padding-bottom: 200px;
+    border-radius: 15px 0 0 15px;
+    position: relative;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding: 30px 15px;
+        padding-bottom: 150px;
+        border-radius: 10px 0 0 10px;
+    }
+    // Max Width 767
+    @media (max-width: $break-767) {
+        margin: 0 15px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: url(../images/mission-box.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        right: -20px;
+        z-index: -1;
+
+        // Max Width 767
+        @media (max-width: $break-767) {
+            display: none;
+        }
+    }
+    img {
+        position: absolute;
+        height: 180px;
+        bottom: 0;
+        left: 0;
+        border-radius: 0 0 0 15px;
+
+        /* Max Width 1024px */
+        @media (max-width: $break_1024) {
+            height: 140px;
+            border-radius: 0 0 0 10px;
+        }
+    }
+    &.approach-box {
+        border-radius: 15px;
+
+        /* Max Width 1024px */
+        @media (max-width: $break_1024) {
+            border-radius: 10px;
+        }
+        &:before {
+            display: none;
+        }
+    }
+    + .mva-box {
+        // Max Width 767
+        @media (max-width: $break-767) {
+            margin-top: 30px;
+        }
+    }
+}
+
+// Service Box
+.service-box {
+    background-image: url(../images/service-box2.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 40px 30px;
+    border-radius: 15px;
+    height: 100%;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        padding: 30px 15px;
+        border-radius: 10px;
+    }
+
+    img {
+        max-height: 200px;
+        margin: auto;
+        max-width: 100%;
+        display: block;
+    }
+    .section-heading {
+        margin-top: 16px;
+    }
+}
+
+// Team Box
+.team-box {
+    .details {
+        background-image: url(../images/team-box.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 40px 30px;
+        border-radius: 15px;
+
+        /* Max Width 1024px */
+        @media (max-width: $break_1024) {
+            padding: 30px 15px;
+            border-radius: 10px;
+        }
+        .section-heading {
+            h2 {
+                span {
+                    font-size: 0.4em;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+// Partner Box
+.partner-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .img-sec {
+        border-radius: 50%;
+        overflow: hidden;
+        width: 120px;
+        height: 120px;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .details-sec {
+        width: calc(100% - 140px);
+        background-image: url(../images/strategic-box.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 100px;
+        padding: 30px 60px;
+
+        // Max Width 767
+        @media (max-width: $break-767) {
+            width: 100%;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+    + .partner-box {
+        margin-top: 100px;
+
+        /* Max Width 1024px */
+        @media (max-width: $break_1024) {
+            margin-top: 50px;
+        }
+    }
+    &:nth-child(even) {
+        flex-direction: row-reverse;
+        .details-sec {
+            text-align: right;
+        }
+    }
+}

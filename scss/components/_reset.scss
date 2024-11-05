@@ -1,0 +1,93 @@
+// Reset
+body {
+    font-family: $primary-ff;
+    font-size: $base-fz;
+    font-weight: 400;
+    line-height: 1.3;
+    color: $white-clr;
+    background-color: $black-clr;
+    overflow-x: hidden;
+    background-size: 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+
+    /* Max Width 1024px */
+    @media (max-width: $break_1024) {
+        font-size: ($base-fz - 2px);
+    }
+
+    /* Max Width 991px */
+    @media (max-width: $break_991) {
+        font-size: ($base-fz - 4px);
+    }
+}
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0px;
+    margin-bottom: 0px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $secondary-ff;
+    font-weight: 800;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+a {
+    text-decoration: none;
+    color: $white-clr;
+    &:hover {
+        text-decoration: none;
+    }
+}
+a,
+button,
+input,
+textarea,
+select {
+    outline: none;
+    &:focus,
+    &:hover,
+    &:active {
+        outline: none;
+    }
+}
+img {
+    max-width: 100%;
+}
+section {
+    position: relative;
+}
+
+// Margin & Padding
+.mt-30 {
+    margin-top: 30px;
+}
+
+// Bootstrap
+.container {
+    @media (min-width: $break-1600) {
+        max-width: 1560px;
+    }
+}
+
+/* Max Width 1024px */
+@media (max-width: $break_1024) {
+}
+
+/* Max Width 991px */
+@media (max-width: $break_991) {
+}
+
+// Max Width 767
+@media (max-width: $break-767) {
+}
+
+// Max Width 576
+@media (max-width: $break-576) {
+}

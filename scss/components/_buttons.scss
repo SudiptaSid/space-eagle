@@ -1,0 +1,32 @@
+// Buttons
+.btn {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 30px;
+    text-transform: capitalize;
+    min-width: 175px;
+    text-shadow: none;
+    &:hover,
+    &:focus {
+        text-shadow: none;
+    }
+}
+
+// Btn Main
+.btn-main {
+    color: $white-clr;
+    background-color: $primary-clr;
+    background-image: url(../images/button-bg.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    box-shadow: 2px 2px 10px 2px rgba($black-clr, 0.4);
+    &:hover,
+    &:focus {
+        color: $white-clr;
+        background-color: darken($primary-clr, 5%);
+    }
+}
